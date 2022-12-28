@@ -10,7 +10,7 @@ export default {
 </div>
 </template>
 
-<style leng="scss">
+<style lang="scss">
 .cmd-bar{
     height: 13vh;
     width: 100%;

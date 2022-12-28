@@ -1,22 +1,34 @@
 <script>
-import AppCmdBar from './components/AppCmdBar.vue';
+import AppHeader from './components/AppHeader.vue';
 import AppExplorer from './components/AppExplorer.vue';
 import AppNavBar from './components/AppNavBar.vue';
+import AppCmdBar from './components/AppCmdBar.vue';
+
+
 
 export default {
 name : "App",
-components : { AppCmdBar, AppExplorer, AppNavBar}
+components : { AppCmdBar, AppExplorer, AppNavBar, AppHeader}
 }
 </script>
 
 <template>
+    <nav>
+        <AppNavBar />
+    </nav>
 
+    <header>
+        <AppHeader />
+    </header>
 
- <nav>
-  <AppNavBar />
- </nav>
- <AppExplorer />
- <AppCmdBar />
+    <main>
+        <AppExplorer />
+    </main>
+        
+    <footer>
+        <AppCmdBar />
+    </footer>
+
 </template>
 
 <style  lang="scss">
