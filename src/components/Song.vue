@@ -17,11 +17,11 @@ methods:{
 <template>
 <div class="song">
     <div class="cover">
-            <!-- <img :src="item.share.image" alt=""> -->
+            <img :src="item.share.image" alt="">
     </div>
     <div class="description">
-        <span class="title">titolp</span>
-        <span class="author">autore</span>
+        <span class="title fw-bold">{{item.title}}</span>
+        <span class="author">{{ item.subtitle }}</span>
     </div>
 
 </div>
@@ -30,14 +30,22 @@ methods:{
 <style lang="scss">
 .song{
     width: calc(100% / 6 - 20px);
-    height: 200px;
-    background:green;
-    border: 1px solid red;
-
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    .cover{
+    height: 70%;
     img{
         width: 100%;
         height: 100%;
     }
+    }
+    .description{
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
