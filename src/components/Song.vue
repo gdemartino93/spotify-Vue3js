@@ -7,9 +7,6 @@ data(){
     }
 },
 methods:{
-    // topSongs(){
-    //     let topSongs = store.topSongs;
-    // }
 }
 }
 </script>
@@ -29,8 +26,8 @@ methods:{
 
 <style lang="scss">
 .song{
-    width: calc(100% / 6 - 20px);
-    margin: 10px;
+    width: calc(100% / 8 - 10px);
+    margin: 5px;
     display: flex;
     flex-direction: column;
     .cover{

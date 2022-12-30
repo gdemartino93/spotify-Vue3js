@@ -27,20 +27,18 @@ mounted(){
 
 <template>
 <div class="wrapper">
-<div class="asd">
-    <h1>Top tracks:</h1>
-</div>
+<h2>Top tracks:</h2>
 <div class="list">
     <Song v-for="(track,index) in store.arrayTopTracks" :key="index" :item="track"/>
-
 </div>
+<h2>OTHER TRACK</h2>
 </div>
 </template>
 
 <style lang="scss">
 .wrapper{
     width: 90vw;
-    min-height: 100%;
+    height: calc(100% + 100px);
     background: yellow;
     display: flex;
     flex-direction: column;

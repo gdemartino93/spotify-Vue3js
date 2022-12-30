@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss">
 .cmd-bar{
-    height: 13vh;
+    height: 100px;
     width: 100%;
     background: #282828;
     position: fixed;
