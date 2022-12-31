@@ -13,8 +13,12 @@ export default {
 <style lang="scss">
 .nav-bar{
     width: 10vw;
-    height: calc(100% + 100px);
+    min-height: 100vh;
     background: red;
-    overflow-y: auto;
+    overflow: hidden;
+    flex: 1;
+    z-index: 1;
+    position: fixed;
+    left: 0;
 }
 </style>

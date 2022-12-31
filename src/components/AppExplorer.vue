@@ -32,17 +32,22 @@ mounted(){
     <Song v-for="(track,index) in store.arrayTopTracks" :key="index" :item="track"/>
 </div>
 <h2>OTHER TRACK</h2>
+
+
+<h2>OTHER TRACK</h2>
 </div>
 </template>
 
 <style lang="scss">
+@use '../styles/partials/variables' as *;
 .wrapper{
-    width: 90vw;
-    height: calc(100% + 100px);
-    background: yellow;
+    color: white;
+    width: 100vw;
+    background: $bg-main;
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    padding-top: 10vh;
+    padding-left: 180px;
     .list{
         display: flex;
         flex-wrap: wrap;

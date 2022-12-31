@@ -26,7 +26,7 @@ methods:{
 
 <style lang="scss">
 .song{
-    width: calc(100% / 8 - 10px);
+    width: calc(100% / 8 - 20px);
     margin: 5px;
     display: flex;
     flex-direction: column;
