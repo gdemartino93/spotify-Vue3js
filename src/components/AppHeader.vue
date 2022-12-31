@@ -14,7 +14,7 @@ methods:{
         axios
         .get(searchTrack)
         .then(res =>{
-            store.arraySearched = res.data.tracks
+            store.arrayTopTracks = res.data.tracks
         })
     }
 },
@@ -28,7 +28,6 @@ methods:{
     </div>
     <div class="col-3">
         <button class="btn" @click="searchTrack">PROVA</button>
-        <!-- <a href="" class="btn" @click="">ASDASDASD</a> -->
     </div>
  </div>
 </template>
