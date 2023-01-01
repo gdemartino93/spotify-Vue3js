@@ -27,7 +27,7 @@ methods:{
         <input class="form-control" type="text" placeholder="Search your song" aria-label="default input example" v-model="search">
     </div>
     <div class="col-3">
-        <button class="btn" @click="searchTrack">PROVA</button>
+        <button class="btn" @click="searchTrack">SEARCH</button>
     </div>
  </div>
 </template>
@@ -47,7 +47,6 @@ methods:{
     border-radius: 28px;
     color: #ffffff;
     font-size: calc(5px + 1vmax);
-    padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: 1px solid white;
     min-width: 120px;

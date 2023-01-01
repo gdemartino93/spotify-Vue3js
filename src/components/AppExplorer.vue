@@ -6,7 +6,8 @@ export default {
 components: { Song },
 data(){
     return{
-        store
+        store,
+        active : 0
     }
 },
 methods:{
@@ -17,7 +18,12 @@ methods:{
         .then(res =>{
             store.arrayTopTracks = res.data.tracks
         })
+    },
+    selected(index){
+        this.store.active = index
+        console.log(this.store.active);
     }
+
 },
 mounted(){
     this.topTracks();
@@ -29,7 +35,7 @@ mounted(){
 <div class="wrapper">
 <h2>Top tracks:</h2>
 <div class="list">
-    <Song v-for="(track,index) in store.arrayTopTracks" :key="index" :item="track"/>
+    <Song v-for="(track,index) in store.arrayTopTracks" :key="index" :item="track" @click="selected(index)"/>
 </div>
 <h2>OTHER TRACK</h2>
 

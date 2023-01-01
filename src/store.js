@@ -7,6 +7,8 @@ arrayTopTracks: [],
 
 //search songs
 searchTrack: "https://shazam.p.rapidapi.com/search?rapidapi-key=c2a5b37f77mshd63ae5663c145cfp1762ecjsnca2df442ee6c&term=",
-arraySearched : []
+arraySearched : [],
+
+active : -1
     
 })
