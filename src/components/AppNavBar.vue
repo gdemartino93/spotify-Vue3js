@@ -34,9 +34,6 @@ export default {
               <a href=""><li>Nome Playlist</li></a>
               <a href=""><li>Nome Playlist</li></a>
               <a href=""><li>Nome Playlist</li></a>
-              
-    
-
             </ul>
         </section>
     </div>
@@ -54,7 +51,7 @@ export default {
     a{
         text-decoration: none;
     }
-    width: 10vw;
+    width: 150px;
     min-height: 100vh;
     background: black;
     overflow: hidden;

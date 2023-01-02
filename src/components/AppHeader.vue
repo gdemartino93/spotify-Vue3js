@@ -37,9 +37,10 @@ methods:{
 .bar-header{
     height: 10vh;
     background: $deepBlue;
-    width: 100vw;
+    width: calc(100vw - 150px);
     position: fixed;
     top: 0;
+    right: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
