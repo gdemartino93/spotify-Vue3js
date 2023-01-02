@@ -15,7 +15,7 @@ data(){
 <template>
 <div class="cmd-bar d-flex align-items-center">
         <div class="col-4 left d-flex ">
-            <div class="songMini" v-for="(songMini,index) in store.arrayTopTracks" :class="store.active == index ? 'd-block' : 'd-none'">
+            <div class="songMini" v-for="(songMini,index) in store.arrayTopTracks" :class="store.active == index ? 'd-flex' : 'd-none'">
                 <img :src="songMini.share.image" alt="">
                 <div class="info">
                     <span class="songName"> {{ songMini.title }}</span>
@@ -50,11 +50,13 @@ data(){
     left: 0;
     color: white;
     z-index: 2;
+    display: flex;
     .icon{
         gap: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .songMini{
         display: flex;
