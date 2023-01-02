@@ -44,6 +44,7 @@ methods:{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
     .btn {
     border-radius: 28px;
     color: #ffffff;
