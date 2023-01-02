@@ -14,6 +14,9 @@ methods:{
 <template>
 <div class="song">
     <div class="cover">
+            <div class="overlay">
+                <font-awesome-icon icon="fa-solid fa-play" class="fs-1 playOverlay" />
+            </div>
             <img :src="item.share.image" alt="">
     </div>
     <div class="description">
@@ -30,8 +33,26 @@ methods:{
     margin: 5px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     .cover{
     height: 70%;
+    position: relative;
+    .playOverlay{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &:hover .overlay{
+        display: block;
+    }
+    .overlay{
+        position: absolute;
+        background:rgba(0, 0, 0, 0.58);
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
     img{
         width: 100%;
         height: 100%;
