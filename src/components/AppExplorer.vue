@@ -37,10 +37,6 @@ mounted(){
 <div class="list">
     <Song v-for="(track,index) in store.arrayTopTracks" :key="index" :item="track" @click="selected(index)"/>
 </div>
-<h2>OTHER TRACK</h2>
-
-
-<h2>OTHER TRACK</h2>
 </div>
 </template>
 
@@ -54,6 +50,7 @@ mounted(){
     flex-direction: column;
     padding-top: 10vh;
     padding-left: 180px;
+    padding-bottom: 180px;
     .list{
         display: flex;
         flex-wrap: wrap;

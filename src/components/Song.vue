@@ -7,6 +7,9 @@ data(){
     }
 },
 methods:{
+capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+}
 }
 }
 </script>
@@ -20,8 +23,8 @@ methods:{
             <img :src="item.share.image" alt="">
     </div>
     <div class="description">
-        <span class="title fw-bold">{{item.title}}</span>
-        <span class="author">{{ item.subtitle }}</span>
+        <span class="title fw-bold">{{capitalizeFirstLetter(item.title)}}</span>
+        <span class="author">{{ capitalizeFirstLetter(item.subtitle) }}</span>
     </div>
 
 </div>
