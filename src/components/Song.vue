@@ -15,7 +15,7 @@ methods:{
 <div class="song">
     <div class="cover">
             <div class="overlay">
-                <font-awesome-icon icon="fa-solid fa-play" class="fs-1 playOverlay" />
+                <font-awesome-icon icon="fa-regular fa-circle-play" class="playOverlay fs-1" />
             </div>
             <img :src="item.share.image" alt="">
     </div>

@@ -12,9 +12,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faUserSecret, faPlay, faForwardStep, faBackwardStep, faShuffle, faRotateRight } from '@fortawesome/free-solid-svg-icons'
+import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
 
 /* add icons to the library */
-library.add(faUserSecret,faPlay,faForwardStep,faBackwardStep,faShuffle,faRotateRight)
+library.add(faUserSecret,faPlay,faForwardStep,faBackwardStep,faShuffle,faRotateRight,faCirclePlay)
 
 
 
