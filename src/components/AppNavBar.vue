@@ -9,13 +9,13 @@ export default {
     <nav>
     <div class="nav-bar">
         <section class="header-nav-bar">
-            <img src="img/logo.svg" alt="">
-            <img src="img/logo-small.svg" alt="" class="logomobile">
+            <!-- <img src="img/logo.svg" alt=""> -->
+            <!-- <img src="img/logo-small.svg" alt="" class="logomobile"> -->
         </section>
         <section class="link-nav-bar">
-            <a href=""><img src="img/home.svg" alt=""><span>Home</span></a>
-            <a href=""><img src="img/search.svg" alt=""><span>Cerca</span></a>
-            <a href=""><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a>  
+            <a href=""><img src="" alt=""><span>Home</span></a>
+            <a href=""><img src="" alt=""><span>Cerca</span></a>
+            <a href=""><img src="" alt=""><span>La tua libreria</span></a>  
         </section>
         <h3>PLAYLIST</h3>
         <section class="features">
@@ -40,7 +40,7 @@ export default {
     <div class="footer-nav">
         <a href=""><i class="fa-regular fa-circle-down"></i><span> Installa App</span></a>
         <hr>
-        <a href=""><img src="img/profile.svg" alt=""> <span id="profilo">Jhon Doe</span></a>
+        <a href=""><img src="" alt=""> <span id="profilo">Jhon Doe</span></a>
     </div>
     </nav>
 </div>
